@@ -23,3 +23,11 @@ for (let i = 0; i < imagesCount; i++) {
     grid.classList.add('change')
   })
 }
+
+const shadow = document.querySelector('.shadow')
+
+grid.addEventListener('mousemove', (e) => {
+  shadow.computedStyleMap.opacity = 1
+  let top = e.clientY - grid.getBoundingClientRect().top
+  let left = e.clientY - grid.getBoundingClientRect().left
+})
