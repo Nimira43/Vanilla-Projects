@@ -15,3 +15,8 @@ html {
   align-items: center;
 }
 
+.wrapper {
+  width: clamp(30rem, 90%, 130rem);
+  position: relative;
+  overflow: hidden;
+}
