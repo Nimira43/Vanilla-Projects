@@ -30,4 +30,10 @@ grid.addEventListener('mousemove', (e) => {
   shadow.computedStyleMap.opacity = 1
   let top = e.clientY - grid.getBoundingClientRect().top
   let left = e.clientY - grid.getBoundingClientRect().left
+  shadow.style.top = `${top}px`
+  shadow.style.left = `${left}px`
+})
+
+grid.addEventListener('mouseleave', (e) => {
+  shadow.style.opacity = 0
 })
