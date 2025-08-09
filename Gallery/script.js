@@ -37,3 +37,13 @@ grid.addEventListener('mousemove', (e) => {
 grid.addEventListener('mouseleave', (e) => {
   shadow.style.opacity = 0
 })
+
+document.body.addEventListener('click', (e) => {
+  if (e.target !== bigImage && boolVal) {
+    grid.classList.remove('change')
+    wrapper.removeChild(bigImage)
+    boolVal = false
+  } else {
+    boolVal = true
+  }
+})
