@@ -20,3 +20,15 @@ html {
   position: relative;
   overflow: hidden;
 }
+
+.grid {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5rem;
+  background-color: rgba(0, 0, 0, 0.48);
+  padding: 0.5rem;
+  border-radius: 1rem;
+}
+
