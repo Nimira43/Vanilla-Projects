@@ -54,3 +54,7 @@ html {
   opacity: 0.8;
   transform: scale(1);
 }
+
+.grid.change .grid-img {
+  opacity: 0.1;
+}
