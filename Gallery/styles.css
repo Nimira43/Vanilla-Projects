@@ -58,3 +58,15 @@ html {
 .grid.change .grid-img {
   opacity: 0.1;
 }
+
+.big-img {
+  position: absolute;
+  width: 70%;
+  height: 70%;
+  top: 15%;
+  left: 15%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 1rem;
+}
+
