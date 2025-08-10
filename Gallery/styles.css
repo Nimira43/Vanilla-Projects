@@ -13,6 +13,7 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #023b3b;
 }
 
 .wrapper {
@@ -68,6 +69,7 @@ html {
   object-fit: cover;
   object-position: center;
   border-radius: 1rem;
+  animation: imageAnim 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 @keyframes imageAnim {
@@ -77,4 +79,18 @@ html {
   to {
     transform: scale(1) rotate(0);
   }
+}
+
+.shadow {
+  width: 50rem;
+  aspect-ratio: 1;
+  background-color: #000;
+  border-radius: 50%;
+  position: absolute;
+  background-image: radial-gradient(#000, #333);
+  filter: blur(4rem);
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: -1;
+  opacity: 0;
 }
