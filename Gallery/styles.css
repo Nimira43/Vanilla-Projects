@@ -70,3 +70,11 @@ html {
   border-radius: 1rem;
 }
 
+@keyframes imageAnim {
+  from {
+    transform: scale(0) rotate(20deg);
+  }
+  to {
+    transform: scale(1) rotate(0);
+  }
+}
